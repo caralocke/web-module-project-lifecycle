@@ -32,11 +32,18 @@ class App extends React.Component {
         })  
   }
 
+  handleChange = event => {
+    console.log('App event target:\n', event.target.value)
+    this.setState({
+      formValues: event.target.value
+    })
+  }
+
   render() {
     return (
       <div className="App">
           <h1>Github User Cards</h1>
-          <UserForm />
+          <UserForm formChange={this.handleChange}/>
           {this.state.user && (
           <div className="users-container">
             <User user={this.state.user}/>

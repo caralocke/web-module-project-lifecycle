@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -59,14 +60,28 @@
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
+  margin: 5%;
 }
 
 .follower{
-  width: 40%;
+  width: 45%;
   padding: 2%;
-  margin: 5px;
 }
 
 .follower img {
   border-radius: 5%;
+  max-width: 100%;
+}
+
+@media(max-width:550px){
+  .user img{
+    max-width: 100%;
+  }
+  .followers{
+    flex-direction: column;
+  }
+
+  .follower{
+    width: 100%;
+  }
 }
