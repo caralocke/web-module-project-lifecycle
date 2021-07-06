@@ -42,8 +42,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <header className='header'>
           <h1>Github User Cards</h1>
           <UserForm formChange={this.handleChange}/>
+        </header>
           {this.state.user && (
           <div className="users-container">
             <User user={this.state.user}/>
