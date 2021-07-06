@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+.users-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user {
+  width: 70%;
+  margin: 0 auto;
+  padding: 5%;
+  }
+
+.user img{
+  border-radius: 50%;
+}
+
+.followers{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.follower{
+  width: 40%;
+  padding: 2%;
+  margin: 5px;
+}
+
+.follower img {
+  border-radius: 5%;
+}
